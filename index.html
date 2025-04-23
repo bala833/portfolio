@@ -76,7 +76,7 @@
       header {
         background: rgba(0, 0, 0, 0.6);
         color: #fff;
-        padding: 100px 20px 50px;
+        padding: 20px 20px 50px;
         text-align: center;
         backdrop-filter: blur(10px);
       }
@@ -688,7 +688,7 @@
 
     <!-- About Me -->
     <section id="about" class="about-section">
-      <div class="about-card slide-in-left">
+      <div class="about-card slide-in-left show">
         <h2 class="section-title">About Me</h2>
         <p class="about-text">
           I'm a passionate frontend developer with a knack for creating sleek,
@@ -974,25 +974,6 @@
       // Initial render
       renderCategory("Languages");
 
-      window.addEventListener("scroll", () => {
-        const aboutCard = document.querySelector(".about-card");
-        const top = aboutCard.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (top < windowHeight - 100) {
-          aboutCard.classList.add("show");
-        }
-      });
-
-      window.addEventListener("scroll", () => {
-        const aboutCard = document.querySelector(".about-card");
-        const top = aboutCard.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (top < windowHeight - 100) {
-          aboutCard.classList.add("show");
-        }
-      });
 
       window.addEventListener("scroll", () => {
         const educationCard = document.querySelector(".education-card");
